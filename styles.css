@@ -317,4 +317,18 @@ body {
   background: #888; /* Color of the horizontal scrollbar thumb */
   border-radius: 5px;
 }
-
+  #scrollbar4::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        #scrollbar4::-webkit-scrollbar-track {
+            background-color: transparent;
+            border: 1.5px solid #7e7e7e;
+            border-radius: 8px;
+        }
+        
+        #scrollbar4::-webkit-scrollbar-thumb {
+            background-color: #f1f1f1;
+            border: 2px solid #616161;
+            border-radius: 8px;
+        }
