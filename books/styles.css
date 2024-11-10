@@ -1,0 +1,5 @@
+.content-container {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: scroll; /* Adds vertical scrollbar */
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+}
