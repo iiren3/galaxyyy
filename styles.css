@@ -290,77 +290,31 @@ body {
     justify-content: center;
     align-items: center;
   }
-/* css tricks style  */
-   html::-webkit-scrollbar {
-      width: 20px;
-      
-    }
-   html::-webkit-scrollbar-track {
-    
-    
-    background-color: black;
-  }
-
-  html::-webkit-scrollbar-thumb {
-    background: #4e4e4e;
-    border-radius: 25px;
-   }
-/* minimalist design */ 
-html::-webkit-scrollbar {
-    width: 10px;
-    
-  }
-
-  html::-webkit-scrollbar-track {
-    background: rgb(179, 177, 177);
-    border-radius: 10px;
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
 }
 
-  html::-webkit-scrollbar-thumb {
-    background: rgb(136, 136, 136);
-    border-radius: 10px;
-  }
-
-  html::-webkit-scrollbar-thumb:hover {
-    background: rgb(100, 100, 100);
-    border-radius: 10px;
-  }
-
-  html::-webkit-scrollbar-thumb:active {
-    background: rgb(68, 68, 68);
-    border-radius: 10px;
-  }
-
-/* striped lines */
-  html::-webkit-scrollbar {
-      width: 20px;
-  }
-  html::-webkit-scrollbar-track {
-  background-image: repeating-linear-gradient(45deg, red 0, red 1px, transparent 0, transparent 50%);
-  background-size: 10px 10px;
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
 }
-html::-webkit-scrollbar-thumb {
-    background: transparent;
-    border-radius: 5px;
-    border: 2px solid black;
-    box-shadow: inset 1px 1px 5px black ;
-   }
 
-/* animated  */
-html::-webkit-scrollbar {
-    width: 20px; 
-  }
-  
-html::-webkit-scrollbar-track {
-    background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(7, 0, 211, 1) 100%);
-  }
-
-html::-webkit-scrollbar-thumb {
-    background: transparent;
-    box-shadow: 0px 0px 0px 100vh black;
-  }
-.scroll-box {
-  max-height: 400px; /* Adjust the height as needed */
-  overflow-y: scroll; /* Adds vertical scrollbar */
-  overflow-x: hidden; /* Hides horizontal scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color when hovering over the scrollbar thumb */
+}
+
+/* Optional: Apply custom styles to horizontal scrollbars if needed */
+::-webkit-scrollbar-horizontal {
+  height: 10px; /* Height of the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb-horizontal {
+  background: #888; /* Color of the horizontal scrollbar thumb */
+  border-radius: 5px;
+}
+
