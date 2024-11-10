@@ -359,3 +359,8 @@ html::-webkit-scrollbar-thumb {
     background: transparent;
     box-shadow: 0px 0px 0px 100vh black;
   }
+.scroll-box {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: scroll; /* Adds vertical scrollbar */
+  overflow-x: hidden; /* Hides horizontal scrollbar */
+}
