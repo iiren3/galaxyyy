@@ -1,4 +1,17 @@
-{
-Overflow-x:scroll;//add horizontal bar option in html
-Overflow-y:scroll; //add vertical bar option in html
+.scroll-box {
+  max-height: 400px; /* This keeps the box height to 400 pixels */
+  overflow-y: scroll; /* This adds a scroll going up and down */
+  overflow-x: hidden; /* This hides any side-to-side scroll */
+}
+.scroll-box::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar */
+  border-radius: 4px; /* Makes the scrollbar round */
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color when you hover over it */
 }
